@@ -1,6 +1,7 @@
 # Download and unzip the archive
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata/projectfiles/UCI%20HAR%20Dataset.zip"
 download.file(fileURL, destfile="./HAR.zip", method="curl")
+unzip("./HAR.zip")
 setwd("./UCI HAR Dataset")
 
 # Get the feature names to use as column labels and remove the parens; get the activity labels
